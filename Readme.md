@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Check status][check-image]][check-url]
 
 * Студент: [Oksana Palladii](https://up.htmlacademy.ru/adaptive/21/user/476339).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Пак] (https://htmlacademy.ru/profile/lizzy).
 
 ---
 
