@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body class="page__body">
+<header class="page-header">
+  <a class="logo">
+    <img src="img/logotype-mobile.svg" width="50" height="24" alt="Пинк">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+      <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+      <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+      <li class="site-list__item"><a href="#">HTML Academy</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="contest">
+    <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </section>
+  <form class="form" action="https://echo.htmlacademy.ru" method="get">
+    <fieldset class="form__fieldset">
+      <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
+        карту!</p>
+      <label class="form__surname-title">Фамилия</label>
+      <input class="form__surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+      <label class="form__name-title">Имя</label>
+      <input class="form__name" type="text" name="name" placeholder="Введите ваше имя*" required>
+      <label class="form__patronym-title">Отчество</label>
+      <input class="form__patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
+    </fieldset>
+    <fieldset class="form__fieldset">
+      <p class="form__text">Ваши безбашенные достижения в путешествии</p>
+      <ul class="form__achievements-list achievements-list">
+        <li class="achievements-list__item">
+          <input class="achievements-list__checkbox" type="checkbox" id="selfie" name="selfie" checked>
+          <label class="achievements-list__title" for="selfie">Сделал селфи с акулой</label>
+        </li>
+        <li class="achievements-list__item">
+          <input class="achievements-list__checkbox" type="checkbox" id="beach" name="beach" checked>
+          <label class="achievements-list__title" for="beach">Обгорел на пляже</label>
+        </li>
+        <li class="achievements-list__item">
+          <input class="achievements-list__checkbox" type="checkbox" id="Chuck" name="Chuck">
+          <label class="achievements-list__title" for="Chuck">Видел Чака Норриса</label>
+        </li>
+        <li class="achievements-list__item">
+          <input class="achievements-list__checkbox" type="checkbox" id="souvenirs" name="souvenirs">
+          <label class="achievements-list__title" for="souvenirs">Накупил сувениров</label>
+        </li>
+        <li class="achievements-list__item">
+          <input class="achievements-list__checkbox" type="checkbox" id="tower" name="tower" checked>
+          <label class="achievements-list__title" for="tower">Удержал башню</label>
+        </li>
+        <li class="achievements-list__item">
+          <input class="achievements-list__checkbox" type="checkbox" id="hotel" name="hotel">
+          <label class="achievements-list__title" for="hotel">Разгромил отель</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form__fieldset">
+      <label class="form__phone-title">Номер телефона</label>
+      <input class="form__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+      <label class="form__email-title">Адрес почты</label>
+      <input class="form__email" type="email" name="email" placeholder="Введите почту *" required>
+      <b>Ваша заявка отправлена</b>
+      <p class="form__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее
+        и оповестим вас.</p>
+      <button class="form__btn">Закрыть окно</button>
+    </fieldset>
+    <fieldset class="form__fieldset">
+      <label class="form__description-title">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+      <textarea class="form__description" name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+    </fieldset>
+    <button class="form__btn-send" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+  </form>
+  <p class="form__footnote"><sup>*</sup> — обязательные поля</p>
+</main>
+<footer class="page-footer">
+  <a class="page-footer__logo" aria-label="Пинк">
+    <img class="page-footer__img" src="img/logo.svg" width="50" height="50" aria-label="Пинк">
+  </a>
+  <ul class="social">
+    <li class="social__item">
+      <a class="social__link" href="https://www.twitter.com" aria-label="Твиттер">
+        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Твиттер">
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
+        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Фейсбук">
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="https://www.youtube.com" aria-label="Ютуб">
+        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Ютуб">
+      </a>
+    </li>
+  </ul>
+  <b class="copyright">Разработано:</b>
+  <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт разработчика">
+    <img class="copyright__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип академии">
+  </a>
+</footer>
+</body>
+</html>
