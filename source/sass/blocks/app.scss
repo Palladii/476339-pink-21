@@ -1,0 +1,89 @@
+.app {
+  padding-top: 29px;
+  background-color: $color-bg--opacity-black;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    paddind-top: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    paddind-top: 150px;
+  }
+}
+
+.app__container {
+  text-align: center;
+}
+
+.app__tagline {
+  margin: 0 0 348px;
+  min-height: 396px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 39px;
+    min-height: 619px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 51px;
+    min-height: 779px;
+  }
+}
+
+.app__hyphenation {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.app__download {
+  width: 100%;
+  padding: 21px 39px;
+  margin-bottom: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  color: inherit;
+  border: 2px solid $white;
+  background-color: transparent;
+  border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding: 21px 49px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 32px;
+    margin-bottom: 67px;
+  }
+}
+
+.app__platform {
+  margin-bottom: 28px;
+  @include ul();
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.app__devices {
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 130px;
+  }
+}
