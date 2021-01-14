@@ -1,0 +1,25 @@
+.app {
+  background-color: $color-bg--opacity-black;
+  min-height: 396px
+  /*background-image: url("../img/back-mobile.png"), url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0, 50% 0;
+  background-size: 620px 662px, 320px 286px;
+  min-height: 396px;
+  margin-top: -66px;*/
+}
+
+.app__tagline {
+  text-align: center;
+  margin: 0;
+  padding: 29px 0 320px;
+  color: $color-text--white;
+
+
+  @include font(300, 24px, 29px);
+}
+
+.app__download {
+  text-decoration: ;
+  margin: 28px auto 44px;
+}
