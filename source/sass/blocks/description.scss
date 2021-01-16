@@ -18,6 +18,7 @@
 
 .description__tagline {
   margin-bottom: 39px;
+  @include font();
 
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
@@ -40,6 +41,7 @@
 
 .description__title {
   margin-bottom: 24px;
+  @include font-size(18px, 24px);
 
   @media (min-width: $desktop-width) {
     margin-bottom: 35px;
@@ -48,6 +50,7 @@
 
 .description__text {
   margin-bottom: 43px;
+  @include font-size(14px, 24px);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;

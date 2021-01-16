@@ -25,22 +25,22 @@
 <main>
   <section class="app">
     <div class="app__container container">
-      <h1 class="app__tagline">Взгляните<br class="app__hyphenation">на&nbspжизнь<br>иначе!</h1>
-      <button class="app__download">Скачать приложение</button>
+      <h1 class="app__tagline">Взгляните на&nbspжизнь<br>иначе!</h1>
+      <button class="app__download" type="button">Скачать приложение</button>
       <ul class="app__platform">
-        <li><img src="img/logotype-mobile.svg" width="50" height="24" alt="Эппл"></li>
-        <li><img src="img/logotype-mobile.svg" width="50" height="24" alt="Андройд"></li>
-        <li><img src="img/logotype-mobile.svg" width="50" height="24" alt="Майкрософт"></li>
+        <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Эппл"></a></li>
+        <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Андройд"></a></li>
+        <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Майкрософт"></a></li>
       </ul>
-      <p class="app__devices">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <p class="app__devices">Доступно для iPhone, iPad, Android, Windows&nbspPhone, OS X, Windows 8</p>
     </div>
   </section>
   <section class="description">
-      <h2 class="visually-hidden">Описание приложения</h2>
-      <div class="description__wrapper">
-        <p class="description__tagline">Устали от серости мегаполиса?
-        <p class="description__tagline">Нам есть, что вам предложить!</p>
-      </div>
+    <h2 class="visually-hidden">Описание приложения</h2>
+    <div class="description__wrapper">
+      <p class="description__tagline">Устали от серости<br> мегаполиса?
+      <p class="description__tagline">Нам есть, что вам<br> предложить!</p>
+    </div>
     <div class="description__container container">
       <ul class="description__list">
         <li class="description__item">
@@ -65,17 +65,17 @@
     <h2 class="visually-hidden">Отзывы</h2>
     <ul class="review__list">
       <li class="review__item">
-        <cite class="review__author ">Николай Петров</cite>
+        <cite class="review__author">Николай Петров</cite>
         <blockquote>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+            вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
       </li>
       <li class="review__item">
         <cite class="review__author">Николай Петров</cite>
         <blockquote>
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-            вещи! А еще я
-            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
         </blockquote>
       </li>
@@ -143,14 +143,14 @@
     <h2 class="visually-hidden">Контакты</h2>
     <p class="contacts__title">Остались вопросы?</p>
     <p class="contacts__title">Свяжитесь с нами!</p>
-    <div class="contacts__title">
-      <h3>Звоните:</h3>
-      <a class="contacts__tel" href="tel:+7(812)555-66-66" aria-label="Контактный телефон">+7(812)555-66-66</a>
-      <h3>Пишите:</h3>
-      <a class="contacts__mail" href="mailto:mail@htmlacademy.ru" aria-label="Электронный адрес">mail@htmlacademy.ru</a>
-      <h3>Приезжайте в гости:</h3>
+    <div class="contacts__wrapper">
+      <h3 class="contacts__subtitle">Звоните:</h3>
+      <a class="contacts__info" href="tel:+7(812)555-66-66" aria-label="Контактный телефон">+7(812)555-66-66</a>
+      <h3 class="contacts__subtitle">Пишите:</h3>
+      <a class="contacts__info" href="mailto:mail@htmlacademy.ru" aria-label="Электронный адрес">mail@htmlacademy.ru</a>
     </div>
-    <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+    <h3 class="contacts__subtitle">Приезжайте в гости:</h3>
+    <address class="contacts__info">ул. Большая Конюшенная, 19/8</address>
   </section>
   <section class="map">
     <iframe class="map__img"
@@ -160,30 +160,35 @@
   </section>
 </main>
 <footer class="page-footer">
-  <a class="page-footer__logo" aria-label="Пинк">
-    <img class="page-footer__img" src="img/logo.svg" width="50" height="50" aria-label="Пинк">
-  </a>
-  <ul class="social">
-    <li class="social__item">
-      <a class="social__link" href="https://www.twitter.com" aria-label="Твиттер">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Твиттер">
+  <div class="page-footer__container container">
+    <a class="page-footer__logo" aria-label="Пинк">
+      <img class="page-footer__img" src="img/logo.svg" width="50" height="50" aria-label="Пинк">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="https://www.twitter.com" aria-label="Твиттер">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Твиттер">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Фейсбук">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com" aria-label="Ютуб">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Ютуб">
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__title">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+         aria-label="Сайт разработчика">
+        <img class="copyright__img" src="img/htmlacademy.svg" width="50" height="50" alt="Логотип академии">
       </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Фейсбук">
-      </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="https://www.youtube.com" aria-label="Ютуб">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Ютуб">
-      </a>
-    </li>
-  </ul>
-  <b class="copyright">Разработано:</b>
-  <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт разработчика">
-    <img class="copyright__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип академии">
-  </a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>

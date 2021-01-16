@@ -18,10 +18,12 @@
 
 .rates__tariff-name {
   margin-bottom: 15px;
+  @include font(700, 16px, 30px);
 }
 
 .rates__tariff-fee {
   margin-bottom: 37px;
+  @include font-size(18px, 30px);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 16px;
@@ -80,6 +82,7 @@
 
 .rates__option {
   background-color: $white;
+  @include font(400, 14px, 30px);
 }
 
 .rates__slider-list {
