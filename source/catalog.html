@@ -2,161 +2,214 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
-<body class="page__body">
+<body class="page-body">
 <header class="page-header">
-  <a class="logo">
-    <img src="img/logotype-mobile.svg" width="50" height="24" alt="Пинк">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-      <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-      <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-      <li class="site-list__item"><a href="#">HTML Academy</a></li>
-    </ul>
-  </nav>
+  <div class="page-header__container container">
+    <a class="logo">
+      <img src="img/logotype-mobile.svg" width="50" height="24" alt="Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li><a class="site-list__link site-list__link--active">Главная</a></li>
+        <li><a class="site-list__link" href="photo.html">Фотографии</a></li>
+        <li><a class="site-list__link" href="form.html">Конкурс</a></li>
+        <li><a class="site-list__link" href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main>
   <section class="main-title">
-    <h1 class="main-title__title">Фотографии пользователей</h1>
+    <h1 class="main-title__title">Фотографии<br>пользователей</h1>
   </section>
   <section class="pics">
-    <h2 class="visually-hidden">Каталог фотографий</h2>
-    <p class="pics__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-    <ul class="pics__list pics-list">
-      <li class="pics-list__item">
-        <img class="pics-list__img pics-list__img--dayly-panorama" src="img/1.svg" width="50" height="50"
-             aria-label="Мост">
-        <h3 class="pics-list__title">Анна</h3>
-        <p class="pics-list__time">(5 минут назад)</p>
-        <p class="pics-list__time">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-          перископе, задавайте свои вопросы!</p>
-        <button class="pics-list__like-btn" type="button"></button>
-        <span class="pics-list__like-title">Нравится</span>
-        <span class="pics-list__like-count">215</span>
-      </li>
-      <li class="pics-list__item">
-        <img class="pics-list__img pics-list__img--dayly-panorama" src="img/2.svg" width="50" height="50"
-             aria-label="Тесла">
-        <h3 class="pics-list__title">Левон</h3>
-        <p class="pics-list__time">(5 часов назад)</p>
-        <p class="pics-list__time">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <button class="pics-list__like-btn" type="button"></button>
-        <span class="pics-list__like-title">Нравится</span>
-        <span class="pics-list__like-count">356</span>
-      </li>
-      <li class="pics-list__item">
-        <img class="pics-list__img pics-list__img--dayly-panorama" src="img/3.svg" width="50" height="50"
-             aria-label="Барабанная установка">
-        <h3 class="pics-list__title">Антон</h3>
-        <p class="pics-list__time">(12 часов назад)</p>
-        <p class="pics-list__time">Соседи будут рады!</p>
-        <button class="pics-list__like-btn" type="button"></button>
-        <span class="pics-list__like-title">Нравится</span>
-        <span class="pics-list__like-count">666</span>
-      </li>
-      <li class="pics-list__item">
-        <img class="pics-list__img pics-list__img--dayly-panorama" src="img/4.svg" width="50" height="50"
-             aria-label="Небоскрёбы">
-        <h3 class="pics-list__title">Борис</h3>
-        <p class="pics-list__time">(20 часов назад)</p>
-        <p class="pics-list__time">Здесь могла быть ваша цитата о высоком и вечном</p>
-        <button class="pics-list__like-btn" type="button"></button>
-        <span class="pics-list__like-title">Нравится</span>
-        <span class="pics-list__like-count">215</span>
-      </li>
-      <li class="pics-list__item">
-        <img class="pics-list__img pics-list__img--dayly-panorama" src="img/5.svg" width="50" height="50"
-             aria-label="Кубанская ярморка">
-        <h3 class="pics-list__title">Сергей</h3>
-        <p class="pics-list__time">(25 часов назад)</p>
-        <p class="pics-list__time">Самая кубанская в мире!</p>
-        <button class="pics-list__like-btn" type="button"></button>
-        <span class="pics-list__like-title">Нравится</span>
-        <span class="pics-list__like-count">4</span>
-      </li>
-      <li class="pics-list__item">
-        <img class="pics-list__img pics-list__img--dayly-panorama" src="img/6.svg" width="50" height="50"
-             aria-label="Обрыв">
-        <h3 class="pics-list__title">Максим</h3>
-        <p class="pics-list__time">(40 часов назад)</p>
-        <p class="pics-list__time">Где снег-то?</p>
-        <button class="pics-list__like-btn" type="button"></button>
-        <span class="pics-list__like-title">Нравится</span>
-        <span class="pics-list__like-count">150</span>
-      </li>
-      <li class="pics-list__item">
-        <img class="pics-list__img pics-list__img--dayly-panorama" src="img/7.svg" width="50" height="50"
-             aria-label="Крыло самолета">
-        <h3 class="pics-list__title">Надежда</h3>
-        <p class="pics-list__time">(45 часов назад)</p>
-        <p class="pics-list__time">Всем GM и взаимные лайки!</p>
-        <button class="pics-list__like-btn" type="button"></button>
-        <span class="pics-list__like-title">Нравится</span>
-        <span class="pics-list__like-count">2560</span>
-      </li>
-    </ul>
-    <p class="pics__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+    <div class="pics__container container">
+      <h2 class="visually-hidden">Каталог фотографий</h2>
+      <p class="pics__text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?
+      </p>
+      <ul class="pics__list pics-list">
+        <li class="pics-list__item">
+          <img class="pics-list__img pics-list__img--dayly-panorama" src="img/panorama-tablet.png" width="320"
+               height="137" aria-label="Мост">
+          <div class="pics-list__bg">
+            <div class="pics-list__title-wrapper">
+              <h3 class="pics-list__title">Анна</h3>
+              <p class="pics-list__time">(5 минут назад)</p>
+            </div>
+            <p class="pics-list__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!</p>
+            <div class="pics-list__like-wrapper">
+              <button class="pics-list__like-btn" type="button"></button>
+              <span class="pics-list__like-title">Нравится</span>
+              <span class="pics-list__like-count">215</span>
+            </div>
+          </div>
+        </li>
+        <li class="pics-list__item">
+          <img class="pics-list__img pics-list__img--dayly-panorama" src="img/photo-1-mobile.png" width="50" height="50"
+               aria-label="Тесла">
+          <div class="pics-list__bg">
+            <div class="pics-list__title-wrapper">
+              <h3 class="pics-list__title">Левон</h3>
+              <p class="pics-list__time">(5 часов назад)</p>
+            </div>
+            <p class="pics-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="pics-list__like-wrapper">
+              <button class="pics-list__like-btn" type="button"></button>
+              <span class="pics-list__like-title">Нравится</span>
+              <span class="pics-list__like-count">356</span>
+            </div>
+          </div>
+        </li>
+        <li class="pics-list__item">
+          <img class="pics-list__img pics-list__img--dayly-panorama" src="img/photo-2-mobile.png" width="50" height="50"
+               aria-label="Барабанная установка">
+          <div class="pics-list__bg">
+            <div class="pics-list__title-wrapper">
+              <h3 class="pics-list__title">Антон</h3>
+              <p class="pics-list__time">(12 часов назад)</p>
+            </div>
+            <p class="pics-list__text">Соседи будут рады!</p>
+            <div class="pics-list__like-wrapper">
+              <button class="pics-list__like-btn" type="button"></button>
+              <span class="pics-list__like-title">Нравится</span>
+              <span class="pics-list__like-count">666</span>
+            </div>
+          </div>
+        </li>
+        <li class="pics-list__item">
+          <img class="pics-list__img pics-list__img--dayly-panorama" src="img/photo-3-tablet.png" width="50" height="50"
+               aria-label="Небоскрёбы">
+          <div class="pics-list__bg">
+            <div class="pics-list__title-wrapper">
+              <h3 class="pics-list__title">Борис</h3>
+              <p class="pics-list__time">(20 часов назад)</p>
+            </div>
+            <p class="pics-list__text">Здесь могла быть ваша цитата о высоком и вечном</p>
+            <div class="pics-list__like-wrapper">
+              <button class="pics-list__like-btn" type="button"></button>
+              <span class="pics-list__like-title">Нравится</span>
+              <span class="pics-list__like-count">215</span>
+            </div>
+          </div>
+        </li>
+        <li class="pics-list__item">
+          <img class="pics-list__img pics-list__img--dayly-panorama" src="img/photo-4-tablet.png" width="50" height="50"
+               aria-label="Кубанская ярморка">
+          <div class="pics-list__bg">
+            <div class="pics-list__title-wrapper">
+              <h3 class="pics-list__title">Сергей</h3>
+              <p class="pics-list__time">(25 часов назад)</p>
+            </div>
+            <p class="pics-list__text">Самая кубанская в мире!</p>
+            <div class="pics-list__like-wrapper">
+              <button class="pics-list__like-btn" type="button"></button>
+              <span class="pics-list__like-title">Нравится</span>
+              <span class="pics-list__like-count">4</span>
+            </div>
+          </div>
+        </li>
+        <li class="pics-list__item">
+          <img class="pics-list__img pics-list__img--dayly-panorama" src="img/photo-5-tablet.png" width="50" height="50"
+               aria-label="Обрыв">
+          <div class="pics-list__bg">
+            <div class="pics-list__title-wrapper">
+              <h3 class="pics-list__title">Максим</h3>
+              <p class="pics-list__time">(40 часов назад)</p>
+            </div>
+            <p class="pics-list__text">Где снег-то?</p>
+            <div class="pics-list__like-wrapper">
+              <button class="pics-list__like-btn" type="button"></button>
+              <span class="pics-list__like-title">Нравится</span>
+              <span class="pics-list__like-count">150</span>
+            </div>
+          </div>
+        </li>
+        <li class="pics-list__item">
+          <img class="pics-list__img pics-list__img--dayly-panorama" src="img/photo-6-tablet.png" width="50" height="50"
+               aria-label="Крыло самолета">
+          <div class="pics-list__bg">
+            <div class="pics-list__title-wrapper">
+              <h3 class="pics-list__title">Надежда</h3>
+              <p class="pics-list__time">(45 часов назад)</p>
+            </div>
+            <p class="pics-list__text">Всем GM и взаимные лайки!</p>
+            <div class="pics-list__like-wrapper">
+              <button class="pics-list__like-btn" type="button"></button>
+              <span class="pics-list__like-title">Нравится</span>
+              <span class="pics-list__like-count">2560</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <p class="pics__text-conclusion">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
   </section>
   <section class="download-pic">
-    <form class="download-pic__form" action="https://echo.htmlacademy.ru" method="POST" name="search-filter">
-      <div class="download-pic__field">
-        <input class="visually-hidden" type="file" id="pic" name="pic" accept="image/*">
-        <label class="download-pic__drop-zone" for="pic">
-          <img class="download-pic__img" src="img/z.svg" width="50" height="50" aria-label="Зимняя дорога">
-        </label>
-      </div>
-      <button class="download-pic__crop" type="button">
-        <img class="download-pic__svg" src="img/z.svg" width="50" height="50" aria-label="Обрезать">
-      </button>
-      <button class="download-pic__fill" type="button">
-        <img class="download-pic__fill-svg" src="img/z.svg" width="50" height="50" aria-label="Яркость">
-      </button>
-      <button class="download-pic__grey" type="button">
-        <img class="download-pic__grey-svg" src="img/z.svg" width="50" height="50" aria-label="Оттенки серого">
-      </button>
-      <div class="download-pic__range range">
-        <div class="range__controls">
-          <div class="range__scale">
-            <div class="bar"></div>
-          </div>
-          <div class="pin pin-min"></div>
-          <div class="pin pin-max"></div>
+    <div class="download-pic container">
+      <form class="download-pic__form" action="https://echo.htmlacademy.ru" method="POST" name="search-filter">
+        <div class="download-pic__field">
+          <input class="visually-hidden" type="file" id="pic" name="pic" accept="image/*">
+          <label class="download-pic__drop-zone" for="pic">
+            <img class="download-pic__img" src="img/photo-7-tablet.png" width="280" height="374"
+                 aria-label="Зимняя дорога">
+          </label>
         </div>
-      </div>
-      <button class="download-pic__submit" type="submit">Запостить</button>
-      <button class="ad-form__reset" type="reset">Отмена</button>
-    </form>
+        <div class="download-pic__edit-wrapper">
+          <button class="download-pic__edit" type="button">
+            <img class="download-pic__svg" src="img/z.svg" width="50" height="50" aria-label="Обрезать">
+          </button>
+          <button class="download-pic__edit" type="button">
+            <img class="download-pic__fill-svg" src="img/z.svg" width="50" height="50" aria-label="Яркость">
+          </button>
+          <button class="download-pic__edit" type="button">
+            <img class="download-pic__grey-svg" src="img/z.svg" width="50" height="50" aria-label="Оттенки серого">
+          </button>
+        </div>
+        <div class="download-pic__range range">
+          <div class="range__bar"></div>
+          <div class="range__toggle"></div>
+        </div>
+        <button class="download-pic__button-submit button" type="submit">Запостить</button>
+        <button class="download-pic__button-reset button" type="reset">Отмена</button>
+      </form>
+    </div>
   </section>
 </main>
 <footer class="page-footer">
-  <a class="page-footer__logo" aria-label="Пинк">
-    <img class="page-footer__img" src="img/logo.svg" width="50" height="50" aria-label="Пинк">
-  </a>
-  <ul class="social">
-    <li class="social__item">
-      <a class="social__link" href="https://www.twitter.com" aria-label="Твиттер">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Твиттер">
+  <div class="page-footer__container container">
+    <a class="page-footer__logo" aria-label="Пинк">
+      <img class="page-footer__img" src="img/logo.svg" width="50" height="50" aria-label="Пинк">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="https://www.twitter.com" aria-label="Твиттер">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Твиттер">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Фейсбук">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com" aria-label="Ютуб">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Ютуб">
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__title">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+         aria-label="Сайт разработчика">
+        <img class="copyright__img" src="img/htmlacademy.svg" width="50" height="50" alt="Логотип академии">
       </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Фейсбук">
-      </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="https://www.youtube.com" aria-label="Ютуб">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Ютуб">
-      </a>
-    </li>
-  </ul>
-  <b class="copyright">Разработано:</b>
-  <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт разработчика">
-    <img class="copyright__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип академии">
-  </a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
