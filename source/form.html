@@ -6,22 +6,24 @@
 </head>
 <body class="page-body">
 <header class="page-header">
-  <a class="logo">
-    <img src="img/logotype-mobile.svg" width="50" height="24" alt="Пинк">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-      <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-      <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-      <li class="site-list__item"><a href="#">HTML Academy</a></li>
-    </ul>
-  </nav>
+  <div class="page-header__container container">
+    <a class="logo">
+      <img src="img/logotype-mobile.svg" width="50" height="24" alt="Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li><a class="site-list__link site-list__link--active">Главная</a></li>
+        <li><a class="site-list__link" href="photo.html">Фотографии</a></li>
+        <li><a class="site-list__link" href="form.html">Конкурс</a></li>
+        <li><a class="site-list__link" href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main>
-  <section class="contest">
-    <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <section class="main-title">
+    <h1 class="main-title__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </section>
   <form class="form" action="https://echo.htmlacademy.ru" method="get">
     <fieldset class="form__fieldset">
