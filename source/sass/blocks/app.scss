@@ -1,12 +1,14 @@
 .app {
-  margin-top: -66px;
-  padding-top: 95px;
+  position: relative;
+  top: -106px;
+  padding-top: 125px;
   background-color: $color-bg__black-opacity;
-  background-image: url("../img/phone.png"), url("../img/back-mobile.png");
+  background-image: url("../img/phone.png"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 223px, center;
+  background-position: 50% 213px, center;
   background-size: 60%, 100%;
   color: $white;
+  z-index: -1;
 
   @media (min-width: $desktop-width) {
     paddind-top: 150px;
@@ -31,22 +33,11 @@
   @media (min-width: $desktop-width) {
     margin: 0 0 51px;
     min-height: 779px;
-
   }
 }
 
-.app__download {
-  width: 100%;
-  @include font(700, 18px, 18px);
-  padding: 21px 39px;
+.app__button-download {
   margin-bottom: 32px;
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-  color: inherit;
-  border: 2px solid $white;
-  background-color: transparent;
-  border-radius: 30px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
