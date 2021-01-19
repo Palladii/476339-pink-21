@@ -1,4 +1,6 @@
 .description {
+  position: relative;
+  top: -129px;
   background-color: $color-bg--white-smoke;
   text-align: center;
 }
@@ -17,6 +19,7 @@
 }
 
 .description__tagline {
+  padding-top: 46px;
   margin-bottom: 39px;
   @include font();
 
@@ -24,7 +27,6 @@
     margin-bottom: 10px;
   }
 }
-
 
 .description__list {
   @include ul();
@@ -58,26 +60,5 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-  }
-}
-
-.offer {
-  padding-bottom: 70px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 72px;
-  }
-}
-
-.offer__hyphenation {
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
