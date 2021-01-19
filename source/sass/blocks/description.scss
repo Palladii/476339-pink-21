@@ -1,0 +1,80 @@
+.description {
+  background-color: $color-bg--white-smoke;
+  text-align: center;
+}
+
+.description__wrapper {
+  background-color: $white;
+  padding: 46px 0 70px;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 0 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 0 72px;
+  }
+}
+.description__tagline {
+  margin-bottom: 39px;
+  @include font();
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+.description__list {
+  @include ul();
+  padding: 53px 0 325px;
+
+  @media (min-width: $tablet-width) {
+    padding: 103px 0 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 390px 0 59px;
+  }
+}
+
+.description__title {
+  margin-bottom: 24px;
+  @include font-size(18px, 24px);
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.description__text {
+  margin-bottom: 43px;
+  @include font-size(14px, 24px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.offer {
+  padding-bottom: 70px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 72px;
+  }
+}
+
+.offer__hyphenation {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

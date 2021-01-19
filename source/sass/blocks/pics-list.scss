@@ -1,0 +1,41 @@
+.pics-list {
+  @include ul();
+}
+
+.pics-list__item {
+  margin-bottom: 20px;
+}
+
+.pics-list__img {
+  width: 100%;
+}
+
+.pics-list__bg {
+  background-color: $color-bg--white-smoke;
+}
+
+.pics-list__title {
+  margin: -14px 17px 14px;
+  padding-top: 25px;
+  @include font(700, 14px, 24px);
+}
+
+.pics-list__time {
+  @include font-size(12px, 24px);
+}
+
+.pics-list__text {
+  @include font(400, 14px, 24px);
+  margin: 0 17px 25px;
+}
+
+.pics-list__like-wrapper {
+  margin: 0 25px;
+  padding-bottom: 25px;
+  @include font(400, 12px, 24px);
+  color: $color-text--pink;
+}
+
+.pics-list__like-btn {
+  margin-right: 18px;
+}

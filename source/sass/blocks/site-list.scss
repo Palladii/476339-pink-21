@@ -1,0 +1,12 @@
+.site-list {
+  @include ul();
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.site-list__link {
+  @include a();
+}

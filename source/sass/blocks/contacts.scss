@@ -1,0 +1,41 @@
+.contacts {
+  padding-top: 47px;
+  margin-bottom: 41px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    margin-bottom: 28px;
+  }
+}
+
+.contacts__title {
+  @include font();
+}
+
+.contacts__wrapper {
+  margin: 45px 0 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 51px 0 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 61px;
+    padding-bottom: 6px;
+  }
+}
+
+.contacts__subtitle {
+@include font(700, 18px, 25px);
+}
+
+.contacts__info {
+  @include font();
+  line-height: 33px;
+}

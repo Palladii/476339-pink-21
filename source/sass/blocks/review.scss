@@ -1,0 +1,41 @@
+.review {
+  padding-top: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 109px;
+    margin-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    margin-bottom: 0;
+  }
+}
+
+.review__list {
+  @include ul();
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    margin-bottom: 0;
+  }
+}
+
+.reviews__slider-list {
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.review__author {
+  @include font-size(18px, 30px);
+}

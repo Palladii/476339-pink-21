@@ -1,0 +1,32 @@
+.offer {
+  padding-bottom: 70px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 72px;
+  }
+}
+
+.offer__hyphenation {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.offer__tagline {
+  margin: 46px 0 39px;
+
+  @media (min-width: $tablet-width) {
+    margin: 58px 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 77px 0 10px;
+  }
+}

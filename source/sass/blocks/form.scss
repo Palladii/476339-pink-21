@@ -1,0 +1,90 @@
+.form.scss {
+  @include font(400, 18px, 30px);
+}
+
+.form__text {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 54px;
+  margin-bottom: 55px;
+}
+
+.form__title {
+  font-size: 14px;
+  color: $color-text--pink;
+  margin: 0 21px;
+}
+
+.form__fieldset {
+  position: relative;
+  border: 0;
+
+  &--grey {
+    background-color: $color-bg--grey-light;
+  }
+}
+
+.form__legend {
+  position: absolute;
+  display: inline-block;
+  text-transform: uppercase;
+  color: $color-text--pink;
+  text-align: center;
+  left: 50%;
+  margin-right: 0 -50% 22px 0;
+  transform: translate(-50%, -50%);
+  top: 42px;
+  @include font-size(14px, 18px);
+}
+
+.form__field {
+  width: 100%;
+  border: 2px solid $color-bg--grey-light;
+  margin-top: 17px;
+  padding: 23px 78px 23px 20px;
+}
+
+.form__fieldset input:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.form__fieldset input:last-child {
+  margin-bottom: 44px;
+}
+
+.form__description {
+  width: 100%;
+  border: 2px solid $color-bg--grey-light;
+  padding: 22px 25px 22px 20px;
+  margin: 74px 0 52px;
+}
+
+.form__btn-send {
+  width: 100%;
+  font-weight: 700;
+  padding: 23px 45px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  color: $white;
+  text-transform: uppercase;
+  border: 2px solid $color-btn--green;
+  background-color: $color-btn--green;
+  border-radius: 1px;
+  margin-bottom: 46px;
+}
+
+.form__container {
+  width: 86.25%;
+  margin: 0 auto;
+}
+
+
+.form__container--contacts {
+  margin-top: 42px;
+}
+
+.form__footnote {
+  position: absolute;
+}
+

@@ -1,0 +1,12 @@
+.achievements-list {
+  @include ul();
+}
+
+.achievements-list li:first-child {
+  margin-top: 113px;
+}
+
+.achievements-list li:last-child {
+  margin-bottom: 43px;
+}
+
