@@ -1,0 +1,12 @@
+.button {
+  width: 100%;
+  @include font(700, 18px, 18px);
+  padding: 21px 39px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  color: inherit;
+  border: 3px solid $white;
+  background-color: transparent;
+  border-radius: 30px;
+}

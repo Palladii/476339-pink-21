@@ -2,33 +2,38 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Пинк</title>
 </head>
 <body class="page-body">
 <header class="page-header">
-  <a class="logo">
-    <img src="img/logotype-mobile.svg" width="50" height="24" alt="Пинк">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-      <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-      <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-      <li class="site-list__item"><a href="#">HTML Academy</a></li>
-    </ul>
-  </nav>
+  <div class="page-header__container container">
+    <a class="logo">
+      <img src="img/logotype-mobile.svg" width="50" height="24" alt="Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li><a class="site-list__link site-list__link--active">Главная</a></li>
+        <li><a class="site-list__link" href="photo.html">Фотографии</a></li>
+        <li><a class="site-list__link" href="form.html">Конкурс</a></li>
+        <li><a class="site-list__link" href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main>
   <section class="app">
-    <h1 class="app__tagline">Взгляните на жизнь иначе!</h1>
-    <button class="app__download" type="button">Скачать приложение</button>
-    <ul class="app__platform">
-      <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Эппл"></a></li>
-      <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Андройд"></a></li>
-      <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Майкрософт"></a></li>
-    </ul>
-    <p class="app__devices">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    <div class="app__container container">
+      <h1 class="app__tagline">Взгляните на жизнь иначе!</h1>
+      <button class="app__button-download button" type="button">Скачать приложение</button>
+      <ul class="app__platform">
+        <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Эппл"></a></li>
+        <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Андройд"></a></li>
+        <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Майкрософт"></a></li>
+      </ul>
+      <p class="app__devices">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
   </section>
   <section class="description">
     <h2 class="visually-hidden">Описание приложения</h2>
@@ -56,29 +61,20 @@
     <ul class="review__list">
       <li class="review__item">
         <cite class="review__author ">Николай Петров</cite>
-        <blockquote>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-            вещи! А еще я
-            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+        <blockquote class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
         </blockquote>
       </li>
       <li class="review__item">
         <cite class="review__author">Николай Петров</cite>
-        <blockquote>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-            вещи! А еще я
-            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+        <blockquote class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
         </blockquote>
       </li>
       <li class="review__item">
         <cite class="review__author">Николай Петров</cite>
-        <blockquote>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-            вещи! А еще я
-            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+        <blockquote class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
         </blockquote>
       </li>
     </ul>
@@ -88,9 +84,10 @@
     <table class="rates__table">
       <tr class="rates__rows">
         <th class="rates__title"></th>
-        <th class="rates__title">База</th>
-        <th class="rates__title">Стандарт</th>
-        <th class="rates__title">Анлим</th>
+        <th class="rates__title"><h3 class="rates__tariff-name">База</h3><b class="rates__tariff-fee">1,99 USD</b></th>
+        <th class="rates__title"><h3 class="rates__tariff-name">Стандарт</h3><b class="rates__tariff-fee">3,99 USD</b>
+        </th>
+        <th class="rates__title"><h3 class="rates__tariff-name">Анлим</h3><b class="rates__tariff-fee">9,99 USD</b></th>
       </tr>
       <tr class="rates__rows">
         <td class="rates__title-option">Розовый фильтр</td>
@@ -111,52 +108,64 @@
         <td class="rates__option"><img src="img/logotype-mobile.svg" width="50" height="24" alt="Включено"></td>
       </tr>
     </table>
+    <ul class="rates__slider-list">
+      <li>
+        <a class="rates__slider-list__item" href="#"><span class="visually-hidden">Слайдер 1</span></a>
+      </li>
+      <li>
+        <a class="rates__slider-list__item rates__slider-list__item--active" href="#"><span class="visually-hidden">Слайдер 2</span></a>
+      </li>
+      <li>
+        <a class="rates__slider-list__item" href="#"><span class="visually-hidden">Слайдер 3</span></a>
+      </li>
+    </ul>
   </section>
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <p class="contacts__title">Остались вопросы?</p>
     <p class="contacts__title">Свяжитесь с нами!</p>
-    <h3>Звоните:</h3>
-    <a class="contacts__tel" href="tel:+7(812)555-66-66" aria-label="Контактный телефон">+7(812)555-66-66</a>
-    <h3>Пишите:</h3>
-    <a class="contacts__mail" href="mailto:mail@htmlacademy.ru" aria-label="Электронный адрес">mail@htmlacademy.ru</a>
-    <h3>Приезжайте в гости:</h3>
-    <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+    <div class="contacts__wrapper">
+      <h3 class="contacts__subtitle">Звоните:</h3>
+      <a class="contacts__info" href="tel:+7(812)555-66-66" aria-label="Контактный телефон">+7(812)555-66-66</a>
+      <h3 class="contacts__subtitle">Пишите:</h3>
+      <a class="contacts__info" href="mailto:mail@htmlacademy.ru" aria-label="Электронный адрес">mail@htmlacademy.ru</a>
+    </div>
+    <h3 class="contacts__subtitle">Приезжайте в гости:</h3>
+    <address class="contacts__info">ул. Большая Конюшенная, 19/8</address>
   </section>
   <section class="map">
-    <iframe class="map__img"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.403216833909!2d30.32052612187146!3d59.93709338744285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598735000790!5m2!1sru!2sru"
-            width="320" height="424" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+    <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.403216833909!2d30.32052612187146!3d59.93709338744285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1598735000790!5m2!1sru!2sru" width="320" height="424" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </section>
 </main>
 <footer class="page-footer">
-  <a class="page-footer__logo" aria-label="Пинк">
-    <img class="page-footer__img" src="img/logo.svg" width="50" height="50" aria-label="Пинк">
-  </a>
-  <ul class="social">
-    <li class="social__item">
-      <a class="social__link" href="https://www.twitter.com" aria-label="Твиттер">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Твиттер">
-      </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Фейсбук">
-      </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="https://www.youtube.com" aria-label="Ютуб">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Ютуб">
-      </a>
-    </li>
-  </ul>
-  <div class="page-footer__copyright copyright">
-    <b class="copyright__title">Разработано:</b>
-    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-       aria-label="Сайт разработчика">
-      <img class="copyright__img" src="img/logo.svg" width="50" height="50" alt="Логотип академии">
+  <div class="page-footer__container container">
+    <a class="page-footer__logo" aria-label="Пинк">
+      <img class="page-footer__img" src="img/logo.svg" width="50" height="50" aria-label="Пинк">
     </a>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="https://www.twitter.com" aria-label="Твиттер">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Твиттер">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Фейсбук">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com" aria-label="Ютуб">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Ютуб">
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__title">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+         aria-label="Сайт разработчика">
+        <img class="copyright__img" src="img/htmlacademy.svg" width="50" height="50" alt="Логотип академии">
+      </a>
+    </div>
   </div>
 </footer>
 </body>

@@ -1,0 +1,75 @@
+.rates {
+  background-color: $color-bg--white-smoke;
+}
+
+.rates__title {
+  border: 1px solid $white;
+  background-color: $color-text--grey;
+  color: $white;
+  width: 86%;
+  text-transform: uppercase;
+  margin-top: 19px;
+  padding-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
+}
+
+.rates__tariff-name {
+  margin-bottom: 15px;
+  @include font(700, 16px, 30px);
+}
+
+.rates__tariff-fee {
+  margin-bottom: 37px;
+  @include font-size(18px, 30px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.rates__table {
+  padding-top: 81px;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 117px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 159px;
+    margin-bottom: 98px;
+  }
+}
+
+.rates__rows {
+  background-color: $white;
+}
+
+.rates__title-option {
+  background-color: $white;
+  text-transform: uppercase;
+  padding: 24px 20px 77px 25px;
+}
+
+.rates__option {
+  background-color: $white;
+  @include font(400, 14px, 30px);
+}
+
+.rates__slider-list {
+  padding-bottom: 49px;
+}
+
+.rates__slider-list__item {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

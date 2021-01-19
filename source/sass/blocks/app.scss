@@ -1,25 +1,78 @@
 .app {
-  background-color: $color-bg--opacity-black;
-  min-height: 396px
-  /*background-image: url("../img/back-mobile.png"), url("../img/phone.png");
+  position: relative;
+  top: -106px;
+  padding-top: 125px;
+  background-color: $color-bg__black-opacity;
+  background-image: url("../img/phone.png"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 100% 0, 50% 0;
-  background-size: 620px 662px, 320px 286px;
-  min-height: 396px;
-  margin-top: -66px;*/
+  background-position: 50% 213px, center;
+  background-size: 60%, 100%;
+  color: $white;
+  z-index: -1;
+
+  @media (min-width: $desktop-width) {
+    paddind-top: 150px;
+  }
+}
+
+.app__container {
+  text-align: center;
 }
 
 .app__tagline {
-  text-align: center;
-  margin: 0;
-  padding: 29px 0 320px;
-  color: $color-text--white;
+  margin: 0 0 348px;
+  min-height: 396px;
+  @include font();
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 39px;
+    min-height: 619px;
+    @include font-size(40px, 48px);
+  }
 
-  @include font(300, 24px, 29px);
+  @media (min-width: $desktop-width) {
+    margin: 0 0 51px;
+    min-height: 779px;
+  }
 }
 
-.app__download {
-  text-decoration: ;
-  margin: 28px auto 44px;
+.app__button-download {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding: 21px 49px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 32px;
+    margin-bottom: 67px;
+  }
+}
+
+.app__platform {
+  margin-bottom: 28px;
+  @include ul();
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.app__devices {
+  padding-bottom: 38px;
+  @include font-size(14px, 24px);
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 130px;
+  }
 }

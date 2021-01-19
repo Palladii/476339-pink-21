@@ -6,18 +6,22 @@
 </head>
 <body class="page-body">
 <header class="page-header">
-  <a class="logo">
-    <img src="img/logotype-mobile.svg" width="50" height="24" alt="Пинк">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-      <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-      <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-      <li class="site-list__item"><a href="#">HTML Academy</a></li>
-    </ul>
-  </nav>
+  <div class="page-header__container container">
+    <a class="logo">
+      <img src="img/logotype-mobile.svg" width="50" height="24" alt="Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li><a class="site-list__link site-list__link--active">Главная</a></li>
+        <li><a class="site-list__link" href="photo.html">Фотографии</a></li>
+        <li><a class="site-list__link" href="form.html">Конкурс</a></li>
+        <li><a class="site-list__link" href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <main>
   <section class="contest">
@@ -87,32 +91,33 @@
   <p class="form__footnote"><sup>*</sup> — обязательные поля</p>
 </main>
 <footer class="page-footer">
-  <a class="page-footer__logo" aria-label="Пинк">
-    <img class="page-footer__img" src="img/logo.svg" width="50" height="50" alt="Пинк">
-  </a>
-  <ul class="social">
-    <li class="social__item">
-      <a class="social__link" href="https://www.twitter.com" aria-label="Твиттер">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" alt="Логотип Твиттер">
+  <div class="page-footer__container container">
+    <a class="page-footer__logo" aria-label="Пинк">
+      <img class="page-footer__img" src="img/logo.svg" width="50" height="50" aria-label="Пинк">
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="https://www.twitter.com" aria-label="Твиттер">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Твиттер">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Фейсбук">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com" aria-label="Ютуб">
+          <img class="social__img" src="img/logo.svg" width="50" height="50" aria-label="Логотип Ютуб">
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__title">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт разработчика">
+        <img class="copyright__img" src="img/htmlacademy.svg" width="50" height="50" alt="Логотип академии">
       </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="https://www.facebook.com" aria-label="Фейсбук">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" alt="Логотип Фейсбук">
-      </a>
-    </li>
-    <li class="social__item">
-      <a class="social__link" href="https://www.youtube.com" aria-label="Ютуб">
-        <img class="social__img" src="img/logo.svg" width="50" height="50" alt="Логотип Ютуб">
-      </a>
-    </li>
-  </ul>
-  <div class="page-footer__copyright copyright">
-  <b class="copyright__title">Разработано:</b>
-  <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-  aria-label="Сайт разработчика">
-    <img class="copyright__img" src="img/logo.svg" width="50" height="50" alt="Логотип академии">
-  </a>
+    </div>
   </div>
 </footer>
 </body>

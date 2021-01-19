@@ -1,0 +1,11 @@
+.pics__text {
+  text-align: center;
+  @include font(400, 14px, 30px);
+  padding: 54px 0 60px;
+}
+
+.pics__text-conclusion {
+  text-align: center;
+  padding: 49px 0 52px;
+  @include font(400, 14px, 30px);
+}
