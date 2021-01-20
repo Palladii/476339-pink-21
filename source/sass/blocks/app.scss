@@ -1,12 +1,14 @@
 .app {
-  margin-top: -106px;
+  position: relative;
+  top: -106px;
   padding-top: 125px;
   background-color: $color-bg__black-opacity;
-  background-image: url("../img/phone.png"), url("../img/back-mobile.png");
+  background-image: url("../img/phone.png"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 213px, center;
   background-size: 60%, 100%;
   color: $white;
+  z-index: -1;
 
   @media (min-width: $desktop-width) {
     paddind-top: 150px;
