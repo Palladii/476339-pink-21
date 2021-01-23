@@ -1,8 +1,10 @@
 .logo {
+  @include size(26.42%, 23px);
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
   display: block;
-
-  @include size(74px, 23px);
   cursor: pointer;
+  padding: 22px 0;
 
   &:hover,
   :focus {
@@ -14,10 +16,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include size(145px, 40px);
-  }
-
-  @media (min-width: $desktop-width) {
-    @include size(147px, 40px);
+    @include size(23.38%, 40px);
+    padding: 27px 43px;
   }
 }

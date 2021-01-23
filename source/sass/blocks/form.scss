@@ -25,6 +25,7 @@
 }
 
 .form__legend {
+  @include font-size(14px, 18px);
   position: absolute;
   display: inline-block;
   text-transform: uppercase;
@@ -34,7 +35,6 @@
   margin-right: 0 -50% 22px 0;
   transform: translate(-50%, -50%);
   top: 42px;
-  @include font-size(14px, 18px);
 }
 
 .form__field {
@@ -87,4 +87,3 @@
 .form__footnote {
   position: absolute;
 }
-

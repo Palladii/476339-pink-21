@@ -1,9 +1,10 @@
 .page-header {
   background-color: $color-bg--black-opacity;
-  opacity: 0.3;
   color: $white;
+  z-index: 1;
 }
 
 .page-header__container {
-  padding-top: 21px;
+  display: flex;
+  justify-content: space-between;
 }

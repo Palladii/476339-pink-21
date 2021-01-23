@@ -1,9 +1,13 @@
 .description {
+
+  width: 100%;
   background-color: $color-bg--white-smoke;
   text-align: center;
 }
 
 .description__wrapper {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
   background-color: $white;
   padding: 46px 0 70px;
 
@@ -15,66 +19,85 @@
     padding: 77px 0 72px;
   }
 }
+
 .description__tagline {
-  margin-bottom: 39px;
   @include font();
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
+    @include font-size(40px, 54px);
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-size(50px, 68px);
   }
 }
+
 .description__list {
   @include ul();
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   padding: 53px 0 325px;
 
   @media (min-width: $tablet-width) {
+    align-content: flex-end;
+    text-align: left;
     padding: 103px 0 49px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
     padding: 390px 0 59px;
   }
 }
 
-.description__title {
-  margin-bottom: 24px;
-  @include font-size(18px, 24px);
+.description__item {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 
   @media (min-width: $desktop-width) {
+    width: 26.8%;
+  }
+}
+
+.description__title {
+  @include font(700, 18px, 24px);
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    @include font-size(30px, 30px);
     margin-bottom: 35px;
   }
 }
 
 .description__text {
+  @include font(400, 14px, 24px);
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
   margin-bottom: 43px;
-  @include font-size(14px, 24px);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
+    @include font-size(18px, 30px);
     margin-bottom: 0;
-  }
-}
-
-.offer {
-  padding-bottom: 70px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 72px;
-  }
-}
-
-.offer__hyphenation {
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }

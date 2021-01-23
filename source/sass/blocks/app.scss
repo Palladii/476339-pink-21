@@ -1,57 +1,101 @@
 .app {
-  margin-top: -106px;
-  padding-top: 125px;
-  background-color: $color-bg__black-opacity;
-  background-image: url("../img/phone.png"), url("../img/back-mobile.png");
+  position: relative;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  background-color: $color-bg__blue;
+  background-image: url("../img/phone.png"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 213px, center;
+  background-position: 50% 283px, center;
   background-size: 60%, 100%;
   color: $white;
+  text-align: center;
+  min-height: 734px;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(40px, 48px);
+    margin: 0 0 39px;
+    min-height: 729px;
+    padding: 266px 0 390px;
+    background-position: 85% 683px, center;
+    text-align: left;
+  }
 
   @media (min-width: $desktop-width) {
-    paddind-top: 150px;
+    @include font-size(50px, 68px);
+    margin: 0 0 51px;
+    min-height: 853px;
+    padding: 324px 0 455px;
   }
 }
 
 .app__container {
-  text-align: center;
+  @media (min-width: $tablet-width) {
+    width: 48.38%;
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 31.91%;
+  }
 }
 
 .app__tagline {
-  margin: 0 0 348px;
-  min-height: 396px;
   @include font();
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  min-height: 572px;
+  margin: 0;
+  padding: 190px 0 320px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 39px;
-    min-height: 619px;
     @include font-size(40px, 48px);
+    min-height: 729px;
+    padding: 266px 0 39px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 51px;
+    @include font-size(50px, 68px);
     min-height: 779px;
+    padding: 324px 0 51px;
   }
 }
 
-.app__button-download {
+.app__wrapper {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  background-color: $color-bg--blue;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.app__link {
+  @include a();
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  width: 100%;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
-    padding: 21px 49px;
-    margin-bottom: 46px;
+    margin: 0 auto 46px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 32px;
     margin-bottom: 67px;
   }
 }
 
-.app__platform {
-  margin-bottom: 28px;
+.app__list {
   @include ul();
+  @include a();
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 38px;
@@ -62,11 +106,25 @@
   }
 }
 
-.app__devices {
-  padding-bottom: 38px;
+.app__item:not(:last-child) {
+  margin-right: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 34px;
+  }
+}
+
+.app__platforms {
   @include font-size(14px, 24px);
+  @include ul();
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  margin: 0;
+  padding-bottom: 28px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
+    font-size: 18px;
     padding-bottom: 119px;
   }
 

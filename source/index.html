@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
 </head>
 <body class="page-body">
@@ -22,81 +23,90 @@
     </nav>
   </div>
 </header>
-<main>
+<main class="page-main">
+  <h1 class="visually-hidden">Пинк</h1>
   <section class="app">
-    <div class="app__container container">
-      <h1 class="app__tagline">Взгляните на&nbspжизнь<br>иначе!</h1>
-      <button class="app__download" type="button">Скачать приложение</button>
-      <ul class="app__platform">
-        <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Эппл"></a></li>
-        <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Андройд"></a></li>
-        <li><a><img src="img/logotype-mobile.svg" width="50" height="24" alt="Майкрософт"></a></li>
+    <div class="app__container">
+      <h2 class="app__tagline">Взгляните<br>на жизнь<br>иначе!</h2>
+      <div class="app__wrapper">
+      <a class="app__link button" href="https://www.apple.com/app-store/" target="_blank">Скачать приложение</a>
+      <ul class="app__list">
+        <li class="app__item">
+          <a href="https://www.apple.com/app-store/" target="_blank" aria-label="Apple Store">
+            <img width="47" height="56" src="img/1.svg" alt="Ap">
+          </a>
+        </li>
+        <li class="app__item">
+          <a href="https://play.google.com/store/" target="_blank" aria-label="Google Play Market">
+            <img width="43" height="47" src="img/2.svg" alt="Ad">
+          </a>
+        </li>
+        <li class="app__item">
+          <a href="https://www.microsoft.com/ru-ru/store/apps/" target="_blank" aria-label="Microsoft Store">
+            <img width="44" height="41" src="img/2.svg" alt="Mc">
+          </a>
+        </li>
       </ul>
-      <p class="app__devices">Доступно для iPhone, iPad, Android, Windows&nbspPhone, OS X, Windows 8</p>
-    </div>
+      <p class="app__platforms">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
+      </div>
+      </div>
   </section>
   <section class="description">
     <h2 class="visually-hidden">Описание приложения</h2>
     <div class="description__wrapper">
-      <p class="description__tagline">Устали от серости<br> мегаполиса?
-      <p class="description__tagline">Нам есть, что вам<br> предложить!</p>
+      <p class="description__tagline">Устали от серости<br class="description__hyphenation"> мегаполиса?</p>
+      <p class="description__tagline">Нам есть, что вам<br>предложить!</p>
     </div>
     <div class="description__container container">
       <ul class="description__list">
         <li class="description__item">
           <h3 class="description__title">Поднимает настроение</h3>
-          <p class="description__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-            кликов!</p>
+          <p class="description__text">Приложение позволит вам победить<br>осеннюю хандру и депрессию<br>буквально в несколько кликов!</p>
         </li>
         <li class="description__item">
           <h3 class="description__title">Меняет мир вокруг</h3>
-          <p class="description__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-            эффект</p>
+          <p class="description__text">Сделайте снимок и украсьте его<br>смайликом или текстовой подписью,<br>чтобы усилить эффект</p>
         </li>
         <li class="description__item">
           <h3 class="description__title">Заводит новых друзей</h3>
-          <p class="description__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-            новых</p>
+          <p class="description__text">Ставьте лайки, комментируйте,<br>делитесь фотографиями с друзьями<br>и заводите новых</p>
         </li>
       </ul>
     </div>
   </section>
-  <section class="review">
+  <section class="research">
+    <div class="research__container container">
+      <div class="research__wrapper">
+      <h2 class="research__title">Эффект на&nbsp24 часа!</h2>
+      <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+      <a class="research__link" href="#">Узнать больше об исследовании</a>
+      </div>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="reviews__container container">
     <h2 class="visually-hidden">Отзывы</h2>
-    <ul class="review__list">
-      <li class="review__item">
-        <cite class="review__author">Николай Петров</cite>
-        <blockquote>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-            вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+    <div class="reviews__list-slider">
+      <div class="reviews__item">
+        <blockquote class="reviews__quote">
+          <cite class="reviews__author">Николай Петров</cite>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <cite>25 лет, водитель трамвая</cite>
         </blockquote>
+      </div>
+    </div>
+    <ul class="reviews__slider-btn">
+      <li class="reviews__slider-item">
+        <a href="#"><span class="visually-hidden">Слайдер 1</span></a>
       </li>
-      <li class="review__item">
-        <cite class="review__author">Николай Петров</cite>
-        <blockquote>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-            вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
-        </blockquote>
+      <li class="reviews__slider-item reviews__slider-item--active">
+        <a href="#"><span class="visually-hidden">Слайдер 2</span></a>
       </li>
-      <li class="review__item">
-        <cite class="review__author">Николай Петров</cite>
-        <blockquote class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </blockquote>
+      <li class="reviews__slider-item">
+        <a href="#"><span class="visually-hidden">Слайдер 3</span></a>
       </li>
     </ul>
-    <ul class="reviews__slider-list">
-      <li>
-        <a class="reviews__slider-list__item reviews__slider-list__item--active" href="#"><span class="visually-hidden">Слайдер 1</span></a>
-      </li>
-      <li>
-        <a class="reviews__slider-list" href="#"><span class="visually-hidden">Слайдер 2</span></a>
-      </li>
-      <li>
-        <a class="reviews__slider-list" href="#"><span class="visually-hidden">Слайдер 3</span></a>
-      </li>
-    </ul>
+    </div>
   </section>
   <section class="rates">
     <h2 class="visually-hidden">Тарифы</h2>
@@ -183,8 +193,7 @@
     </ul>
     <div class="page-footer__copyright copyright">
       <b class="copyright__title">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-         aria-label="Сайт разработчика">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт разработчика">
         <img class="copyright__img" src="img/htmlacademy.svg" width="50" height="50" alt="Логотип академии">
       </a>
     </div>

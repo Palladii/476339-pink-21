@@ -1,0 +1,9 @@
+.page-main {
+  position: relative;
+  top: -166px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: -520px;
+  }
+}

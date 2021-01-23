@@ -15,9 +15,9 @@
 }
 
 .pics-list__title {
+  @include font(700, 14px, 24px);
   margin: -14px 17px 14px;
   padding-top: 25px;
-  @include font(700, 14px, 24px);
 }
 
 .pics-list__time {
@@ -30,9 +30,9 @@
 }
 
 .pics-list__like-wrapper {
+  @include font(400, 12px, 24px);
   margin: 0 25px;
   padding-bottom: 25px;
-  @include font(400, 12px, 24px);
   color: $color-text--pink;
 }
 
